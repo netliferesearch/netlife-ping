@@ -1,0 +1,3 @@
+***REMOVED***
+
+require('./src/server');
