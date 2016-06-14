@@ -15,7 +15,7 @@ const bot = controller.spawn({
 
 const sendMessage = () => {
     bot.sendWebhook({
-        text: 'Ojoj, du har besøk i resepsjonen (fra Arduino)!',
+        text: 'Ojoj, du har besøk i resepsjonen!',
         channel: '@fredrik',
         username: 'netlife-ping',
         icon_emoji: ':anders:',
