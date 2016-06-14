@@ -9,7 +9,9 @@ TO DO:
 * Figure out how to administrate data
 * Figure out how connect 60 buttons...
 
-Run Node server:
-```npm run dev```
+Run development:
+```js
+npm run dev
+```
 
 ![alt text](http://netliferesearch.com/assets/img/ansatte/anders.svg "Digital receptionist")
