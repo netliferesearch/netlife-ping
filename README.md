@@ -1,7 +1,8 @@
 # Netlife Ping
 
-Netlife Research digitale resepsjonist.
+Netlife Researchs digital receptionist
 
-```node bot```
+```npm run dev```
 
-[Botkit](http://howdy.ai/botkit/)
+* For sending messages to Slack [Botkit](http://howdy.ai/botkit/) (Could probably just use a regular http post)
+* For running Arduino with JavaScript on Node [Johnny Five](http://johnny-five.io/)
