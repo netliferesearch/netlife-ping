@@ -2,7 +2,14 @@
 
 Netlife Researchs digital receptionist
 
+* [Botkit](http://howdy.ai/botkit/) for sending messages to Slack (Could probably just use a regular http post)
+* [Johnny Five](http://johnny-five.io/) for running Arduino with JavaScript on Node
+
+TO DO:
+* Figure out how to administrate data
+* Figure out how connect 60 buttons...
+
+Run Node server:
 ```npm run dev```
 
-* For sending messages to Slack [Botkit](http://howdy.ai/botkit/) (Could probably just use a regular http post)
-* For running Arduino with JavaScript on Node [Johnny Five](http://johnny-five.io/)
+![alt text](http://netliferesearch.com/assets/img/ansatte/anders.svg "Digital receptionist")
