@@ -13,10 +13,10 @@ const bot = controller.spawn({
     },
 });
 
-const sendMessage = () => {
+const sendMessage = (user) => {
     bot.sendWebhook({
-        text: 'Ojoj, du har besøk i resepsjonen!',
-        channel: '@fredrik',
+        text: 'Da er Bergen oppe på ping også! :bacon:',
+        channel: user,
         username: 'netlife-ping',
         icon_emoji: ':anders:',
     }, (err) => {
