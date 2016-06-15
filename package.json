@@ -2,18 +2,18 @@
   "name": "netlife-ping",
   "version": "1.0.0",
   "description": "Reception manager",
-  "author": "Netlife Research",
-  "license": "MIT",
+  "author": "Fredrik Jensen",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "dev": "node index"
   },
-  "author": "Fredrik Jensen",
-  "license": "ISC",
   "dependencies": {
     "botkit": "0.0.12",
-    "johnny-five": "^0.9.45",
     "express": "^4.13.4",
+    "firmata": "^0.12.0",
+    "johnny-five": "^0.9.45",
+    "serialport": "^3.1.2",
     "socket.io": "^1.4.6"
   },
   "devDependencies": {
