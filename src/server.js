@@ -1,4 +1,4 @@
-***REMOVED***
+'use strict';
 
 const five = require('johnny-five');
 const board = new five.Board();
@@ -15,9 +15,9 @@ usermap().then(users => {
 
         buttons.on('release', (e) => {
             users.filter(u => u.pin === e.pin).map(u => bot.sendMessage(u.handle, u.message));
-        ***REMOVED***
+        });
         buttons.on('hold', () => {
             bot.sendMessage('#netlife-ping', 'noen holder på knappen');
-        ***REMOVED***
-    ***REMOVED***
+        });
+    });
 }).catch(err => console.log(err));
