@@ -27,3 +27,6 @@ npm-debug.log
 ######################
 *.sublime-project
 *.sublime-workspace
+
+# Secret files #
+.env
