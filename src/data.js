@@ -1,7 +1,7 @@
 'use strict';
-
+require('dotenv').config();
 const SpreadSheet = require('google-spreadsheet-reader');
-const spreadSheet = new SpreadSheet('1geItk1iXyELsMgb76AH0Ze14juGdEu4mpx6RGjRmzCM');
+const spreadSheet = new SpreadSheet(process.env.GOOGLE_SPREADSHEET_ID);
 
 const loadData = spreadSheet.load()
     .then(res => res)

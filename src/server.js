@@ -9,7 +9,6 @@ const usermap = () => userData.then(res => res[1]);
 
 usermap().then(users => {
     board.on('ready', () => {
-
         /* @todo This doesn't scale, we should find a way to serialize the stuff*/
         const buttons = new five.Buttons([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
@@ -20,4 +19,4 @@ usermap().then(users => {
             bot.sendMessage('#netlife-ping', 'noen holder på knappen');
         });
     });
-}).catch(err => console.log(err));
+}).catch(err => console.log(err.message));
