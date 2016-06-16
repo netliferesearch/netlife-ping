@@ -1,5 +1,5 @@
 'use strict';
-
+require('dotenv').config();
 const Botkit = require('botkit');
 
 const controller = Botkit.slackbot({
@@ -9,7 +9,7 @@ const controller = Botkit.slackbot({
 
 const bot = controller.spawn({
     incoming_webhook: {
-        url: 'https://hooks.slack.com/services/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',
+        url: process.env.SLACK_WEBHOOK,
     },
 });
 
