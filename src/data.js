@@ -1,10 +1,16 @@
-'use strict';
-require('dotenv').config();
-const SpreadSheet = require('google-spreadsheet-reader');
-const spreadSheet = new SpreadSheet(process.env.GOOGLE_SPREADSHEET_ID);
-
-const loadData = spreadSheet.load()
-    .then(res => res)
-    .catch(err => { console.error(err.message); });
+var door = "noen har ringt på knappen og venter på deg!"
+var loadData = [{
+    pin: 0,
+    handle: '@martin',
+    message: 'Hei Martin, ' + door
+}, {
+    pin: 1,
+    handle: '@ovedalen',
+    message: 'Hei Ove, ' + door
+}, {
+    pin: 2,
+    handle: '@josmag',
+    message: 'Hei Jostein, ' + door
+}];
 
 module.exports = loadData;

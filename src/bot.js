@@ -1,29 +1,24 @@
-'use strict';
-require('dotenv').config();
-const Botkit = require('botkit');
+var fetch = require('node-fetch');
 
-const controller = Botkit.slackbot({
-    debug: false,
-    json_file_store: './log/',
-});
+var url = 'https://hooks.slack.com/services/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';
 
-const bot = controller.spawn({
-    incoming_webhook: {
-        url: process.env.SLACK_WEBHOOK,
-    },
-});
-
-const sendMessage = (user, message) => {
-    bot.sendWebhook({
-        text: message,
-        channel: user,
-        username: 'netlife-ping',
-        icon_emoji: ':anders:',
-    }, (err) => {
-        if (err) {
-            console.error(err);
-        }
-        console.log('Message sent to Slack');
+var sendMessage = (user, message) => {
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          text: message,
+          channel: user,
+          username: 'netlife-ping',
+          icon_emoji: ':anders:',
+      })
+    })
+    .then(function(data) {
+        console.log('melding sendt');
+    }).catch(function(error) {
+        console.log('request failed', error);
     });
 };
 
