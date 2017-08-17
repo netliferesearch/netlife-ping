@@ -2,6 +2,8 @@
 
 Netlife Research's digital receptionist
 
+![image uploaded from ios](https://user-images.githubusercontent.com/4348783/29402148-310d1b06-8334-11e7-8694-97be0cd3ddce.jpg)
+
 In this project we'll make a button board where each button is mapped to one of the company's employees. The idea is that when a visitor enters the reception, it's possible for this person to push the button of their Netlife contact, which then triggers a notification in Slack.
 
 ## Stuff we use for this project
